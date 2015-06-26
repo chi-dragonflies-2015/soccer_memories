@@ -4,6 +4,10 @@
   line-height: 20px;
 }
 
+.document {
+  height: 100%;
+}
+
 .author {
   margin-top: 3px;
 }
@@ -14,6 +18,12 @@
   background-color: #8E2323;; }
 
 /*profile*/
+
+#styled_text_area {
+    width: 100%;
+    height: 120px;
+    margin-top: 8px;
+}
 
 /*!
  * Materialize v0.97.0 (http://materializecss.com)
@@ -5806,7 +5816,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #7984A1;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -5816,7 +5826,7 @@ small {
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #2bbbad; }
+    background-color: #424242; }
 
 .btn-floating {
   display: inline-block;
@@ -6740,8 +6750,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     top: -14px;
     font-size: 0.8rem; }
 
-select {
-  display: none; }
+/*select {
+
+  display: none; }*/
 
 select.browser-default {
   display: block; }

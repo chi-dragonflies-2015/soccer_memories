@@ -1,1 +1,24 @@
-<form method=
+<div class="container">
+  <form id="new_post" action="/posts" method="post">
+
+    <ul>
+      <!-- eventually I want this to be a call to the API to get all the
+      match day data -->
+      <li>Select Match:</li>
+      <li>  <select>
+            <option value="vs_portugal">Vs Portugal</option>
+            <option value="vs_algeria">Vs Algeria</option>
+            </select>
+      </li>
+
+      <li>Memory :</li>
+      <li><input type="textarea" id="styled_text_area" name="post"></li>
+      <li><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">+</i></a></li>
+
+    </ul>
+
+
+
+  </form>
+
+</div>
