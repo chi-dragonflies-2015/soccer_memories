@@ -24,7 +24,11 @@
 
   <body>
       <div class="blue lighten-3">
-        <%= erb :"shared/_logged_in" %>
+        <% if session[:user_id] %>
+          <%= erb :"shared/_logged_in" %>
+        <% else %>
+          <%= erb :"shared/_logged_out" %>
+        <% end %>
       </div>
         <%= yield %>
 
