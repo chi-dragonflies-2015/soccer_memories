@@ -1680,6 +1680,8 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
+
+  background-color: rgba(118, 145, 181, 0.66);
   /* 2 */ }
 
 /**
