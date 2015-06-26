@@ -8,12 +8,17 @@ end
 
 post "/sessions" do
   @authenticated = User.authenticate(params[:username], params[:password])
-  if @authenticated
-    login_user(params[:username])
-    redirect "/profile"
-  else
-    @invalid_user = "Please enter valid credentials"
-    erb :login
-  end
+    if @authenticated
+      login_user(params[:username])
+      redirect "/profile"
+    else
+      @invalid_user = "Please enter valid credentials"
+      erb :login
+    end
+end
+
+get '/logout' do
+  logout_user
+  redirect "/"
 end
 

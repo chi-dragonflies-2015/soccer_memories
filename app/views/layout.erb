@@ -24,7 +24,7 @@
 
   <body>
       <div class="blue lighten-3 z-depth-4">
-        <% if session[:user_id] %>
+        <% if session[:id] %>
           <%= erb :"shared/_logged_in" %>
         <% else %>
           <%= erb :"shared/_logged_out" %>
